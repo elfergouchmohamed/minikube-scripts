@@ -2,7 +2,7 @@
 
 #Install git
 echo "install git ..."
-sudo update install git -y
+sudo apt install git -y
 sleep 10
 
 #docker installation scrinpt for ubuntu distribution
