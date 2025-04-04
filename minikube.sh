@@ -17,7 +17,7 @@ echo \
 sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
-echo "sleep 30 seconds ..."
+echo "sleep 10 seconds ..."
 sleep 10
 
 # install kubelet
@@ -28,7 +28,7 @@ echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl 
 kubectl version --client
 
-echo "sleep 30 seconds ..."
+echo "sleep 10 seconds ..."
 sleep 10
 # install minikube
 echo "install minikube ..."
