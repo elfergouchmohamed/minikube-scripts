@@ -1,10 +1,5 @@
 #!/bin/bash
 
-#Install git
-echo "install git ..."
-sudo apt install git -y
-sleep 10
-
 #docker installation scrinpt for ubuntu distribution
 echo "Installing Docker..."
 # Add Docker's official GPG key:
