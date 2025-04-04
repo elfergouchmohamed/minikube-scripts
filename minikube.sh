@@ -34,7 +34,7 @@ curl -LO "https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl.s
 
 echo "$(<kubectl.sha256) kubectl" | sha256sum --check
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-rm kubectl kubectl.sha256
+sudo rm kubectl kubectl.sha256
 
 kubectl version --client
 echo "kubectl installed. Sleeping for 10 seconds..."
@@ -44,6 +44,6 @@ sleep 10
 echo "Installing Minikube..."
 curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
-rm minikube-linux-amd64
+sudo rm minikube-linux-amd64
 
 minikube start
