@@ -18,7 +18,7 @@ sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 echo "sleep 30 seconds ..."
-sleep 30
+sleep 10
 
 # install kubelet
 echo "install kubeclt ..."
@@ -29,7 +29,7 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 kubectl version --client
 
 echo "sleep 30 seconds ..."
-sleep 30
+sleep 10
 # install minikube
 echo "install minikube ..."
 curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
