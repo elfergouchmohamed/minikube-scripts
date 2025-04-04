@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 # Docker installation script for Ubuntu
 echo "Installing Docker..."
@@ -21,8 +20,8 @@ echo \
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
+sudo groupadd docker
 sudo usermod -aG docker $USER
-newgrp docker
 
 echo "Docker installed. Sleeping for 10 seconds..."
 sleep 10
