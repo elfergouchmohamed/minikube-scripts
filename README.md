@@ -11,6 +11,7 @@ This script has been developed for personal use to automate the initialization o
 ### ✅ Prerequisites
 
 - A newly launched Ubuntu instance (tested on Ubuntu 20.04+)
+-  Ensure `git` is installed
 - Terminal access with `sudo` privileges
 
 ---
