@@ -27,12 +27,13 @@ if ! command -v docker &> /dev/null; then
   if getent group docker > /dev/null 2>&1; then
     echo "Group 'docker' already exists."
   else
-    sudo groupadd docker
+    groupadd docker
     echo "Group 'docker' created."
   fi
 
   # Add current user to docker group
-  sudo usermod -aG docker $USER
+  usermod -aG docker $USER
+  newgrp docker
 
   echo "Docker installed. Sleeping for 10 seconds..."
   sleep 10
