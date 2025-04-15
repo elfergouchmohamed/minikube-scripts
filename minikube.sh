@@ -70,7 +70,6 @@ if ! command -v minikube &> /dev/null; then
   sudo install minikube-linux-amd64 /usr/local/bin/minikube
   sudo rm minikube-linux-amd64
 
-  minikube start
 else
   echo "Minikube is already installed."
 fi
